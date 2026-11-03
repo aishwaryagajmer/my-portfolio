@@ -37,11 +37,11 @@ const Navbar = () => {
           {/* Logo */}
           <Link href="#top" className="flex items-center gap-2">
             <Image
-              src="/logo.png"
-              alt="logo"
-              width={130}
-              height={40}
-              className="object-cover"
+              src="/newlogoaish.png"
+              alt="Aishwarya logo"
+              width={180}
+              height={50}
+              className="object-contain"
             />
           </Link>
 

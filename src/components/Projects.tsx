@@ -55,27 +55,31 @@ const Projects = () => {
               </p>
 
               {/* Technologies */}
-              <div className="flex flex-wrap gap-2 mb-6">
-                {project.technologies.map((tech) => (
-                  <span
-                    key={tech}
-                    className="px-3 py-1 text-sm bg-primary/10 text-primary rounded-full"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
+              {project.technologies && project.technologies.length > 0 && (
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {project.technologies.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-3 py-1 text-sm bg-primary/10 text-primary rounded-full"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              )}
 
               {/* Buttons */}
               <div className="flex items-center justify-between mt-4">
-                <Link
-                  href={project.githubLink}
-                  target="_blank"
-                  className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition"
-                >
-                  <FaGithub className="w-5 h-5" />
-                  <span className="text-sm font-medium">Code</span>
-                </Link>
+                {project.githubLink && (
+                  <Link
+                    href={project.githubLink}
+                    target="_blank"
+                    className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition"
+                  >
+                    <FaGithub className="w-5 h-5" />
+                    <span className="text-sm font-medium">Code</span>
+                  </Link>
+                )}
 
                 <Link
                   href={project.demoLink}
@@ -83,7 +87,9 @@ const Projects = () => {
                   className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition"
                 >
                   <FaExternalLinkAlt className="w-5 h-5" />
-                  <span className="text-sm font-medium">Live Demo</span>
+                  <span className="text-sm font-medium">
+                    {project.demoLinkLabel ?? "Live Demo"}
+                  </span>
                 </Link>
               </div>
             </div>

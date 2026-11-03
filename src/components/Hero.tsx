@@ -2,7 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaTwitter, FaReact } from "react-icons/fa";
+import {
+  FaBehance,
+  FaGithub,
+  FaLinkedin,
+  FaTwitter,
+  FaReact,
+} from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
@@ -28,7 +34,7 @@ const Hero = () => {
 
 
             <div className="flex justify-center md:justify-start gap-1">
-            <p className="mt-2 text-3xl font-semibold">a Student</p>
+            <p className="mt-2 text-3xl font-semibold">a UI Developer</p>
             <span className="mt-2 inline-block w-[2.5] h-8 bg-black animate-blink dark:bg-white"></span>
           </div>
 
@@ -39,7 +45,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="mt-2 text-base md:text-md text-gray-600 dark:text-gray-300 max-w-xl"
           >
-            I'm a Computer Engineer with a strong passion for MERN stack development. I specialize in building modern, responsive, and user-friendly web applications using React.js, Next.js, Tailwind CSS. I also have backend experience with Node.js, Express.js, and MongoDB, which helps me understand the full development workflow.
+            I'm a Computer Engineer with a strong passion for UI/UX development and interface design. I create modern, responsive, and user-friendly digital experiences using React.js, Next.js, and Tailwind CSS, with a focus on aesthetics, usability, and smooth interaction. I enjoy turning ideas into visually engaging and accessible web experiences.
           </motion.p>
 
           {/* Social links */}
@@ -55,12 +61,16 @@ const Hero = () => {
             >
               {[
                 {
-                  href: "https://github.com/basantbht",
+                  href: "https://github.com/aishwaryagajmer",
                   icon: FaGithub,
                 },
                 {
                   href: "https://www.linkedin.com/in/basant-bhatt-3058a7292/",
                   icon: FaLinkedin,
+                },
+                {
+                  href: "https://www.behance.net/aishwaryagajmer",
+                  icon: FaBehance,
                 },
                 {
                   href: "https://x.com/BasantBhatt94",
@@ -117,7 +127,7 @@ const Hero = () => {
             className="rounded-3xl overflow-hidden shadow-xl border border-gray-300 dark:border-gray-700"
           >
             <Image
-              src="/profile.png"
+              src="/aish.png"
               alt="profile image"
               width={370}
               height={370}

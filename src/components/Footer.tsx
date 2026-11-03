@@ -14,11 +14,11 @@ const Footer = () => {
             <h3 className="text-xl font-semibold dark:text-white text-gray-900 flex justify-center md:justify-start">
               <Link href="#top">
                 <Image
-                  src="/logo.png"
-                  alt="logo"
-                  width={130}
-                  height={40}
-                  className="object-cover"
+                  src="/newlogoaish.png"
+                  alt="Aishwarya logo"
+                  width={180}
+                  height={50}
+                  className="object-contain"
                 />
               </Link>
             </h3>
@@ -30,7 +30,7 @@ const Footer = () => {
           {/* Social Links */}
           <div className="flex space-x-6">
             <Link
-              href="https://github.com/basantbht"
+              href="https://github.com/aishwaryagajmer"
               target="_blank"
               className="text-2xl text-gray-700 dark:text-gray-300 hover:text-primary transition-colors duration-300 hover:scale-110 transform"
             >

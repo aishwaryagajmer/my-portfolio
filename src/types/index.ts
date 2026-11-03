@@ -1,9 +1,10 @@
 export interface Project {
     title: string,
     description: string;
-    technologies: string[];
-    githubLink: string;
+    technologies?: string[];
+    githubLink?: string;
     demoLink: string;
+    demoLinkLabel?: string;
     image: string;
 }
 
