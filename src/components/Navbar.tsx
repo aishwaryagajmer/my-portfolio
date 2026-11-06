@@ -1,6 +1,8 @@
 "use client";
-import React, { useEffect, useState } from "react";
+
+import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Bars3Icon,
   MoonIcon,
@@ -8,140 +10,122 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { useTheme } from "@/context/ThemeContext";
-import Image from "next/image";
+
+const menuItems = [
+  { href: "#top", label: "Home" },
+  { href: "#projects", label: "Projects" },
+  { href: "#contact", label: "Contact" },
+];
 
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
-  const [activeSection, setActiveSection] = useState("");
-
-  const handleMenuClick = (id: string) => {
-    setActiveSection(id); // manually update active
-  };
-
-  const menuItems = [
-    { href: "#top", label: "Home" },
-    { href: "#projects", label: "Projects" },
-    { href: "#contact", label: "Contact" },
-  ];
+  const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   return (
-    <nav className="fixed w-full bg-[#edf6f9]/80 dark:bg-[#212428]/80 backdrop-blur-md shadow-sm z-50 transition-all">
-      <div className="max-w-7xl mx-auto px-5">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link href="#top" className="flex items-center gap-2">
-            <Image
-              src="/newlogoaish.png"
-              alt="Aishwarya logo"
-              width={180}
-              height={50}
-              className="object-contain"
-            />
-          </Link>
+    <nav className="fixed inset-x-0 top-0 z-50 border-b border-gray-200/70 bg-[#f7f5f2]/85 backdrop-blur-xl dark:border-gray-800/80 dark:bg-[#111214]/85">
+      <div className="mx-auto flex h-[4.5rem] max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-12">
+        <Link
+          href="#top"
+          onClick={closeMobileMenu}
+          aria-label="Aishwarya Gajmer, home"
+          className="shrink-0"
+        >
+          <Image
+            src="/newlogoaish.png"
+            alt="Aishwarya Gajmer"
+            width={152}
+            height={44}
+            className="h-10 w-auto object-contain"
+            priority
+          />
+        </Link>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8 text-[17px]">
-            {menuItems.map((item) => {
-              const isActive = activeSection === item.href.replace("#", "");
-
-              return (
-                <Link
-                  onClick={() => handleMenuClick(item.href.replace("#", ""))}
-                  key={item.href}
-                  href={item.href}
-                  className={`relative pb-1 transition-all text-gray-700 after:content-[''] after:absolute after:left-1/2 after:bottom-[0.1rem] after:h-[0.2rem] after:w-0 after:bg-red-500 after:rounded-full after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full dark:text-gray-300`}
-                >
-                  {item.label}
-                </Link>
-              );
-            })}
-
-            {/* Resume Button */}
+        <div className="hidden items-center gap-8 md:flex">
+          {menuItems.map((item) => (
             <Link
-              href="/aishwaryaCV.pdf"
-              download
-              className="px-4 py-2 rounded-lg shadow hover:opacity-90 transition text-gray-800 bg-gray-400 dark:bg-gray-700 dark:text-gray-300
-"
+              key={item.href}
+              href={item.href}
+              className="text-sm font-medium text-gray-600 transition hover:text-primary dark:text-gray-300"
             >
-              Resume
+              {item.label}
             </Link>
-
-            {/* Theme Toggle */}
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-800 dark:text-white transition cursor-pointer"
-            >
-              {theme === "dark" ? (
-                <SunIcon className="w-5 h-5" />
-              ) : (
-                <MoonIcon className="w-5 h-5" />
-              )}
-            </button>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            onClick={toggleMobileMenu}
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+          ))}
+          <Link
+            href="/resume%20(3).pdf"
+            download
+            className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-primary/90"
           >
-            {isMobileMenuOpen ? (
-              <XMarkIcon className="w-7 h-7 dark:text-white cursor-pointer" />
+            Download resume
+          </Link>
+          <button
+            type="button"
+            onClick={toggleTheme}
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+            className="rounded-full border border-gray-200 p-2.5 text-gray-600 transition hover:border-primary hover:text-primary dark:border-gray-700 dark:text-gray-200"
+          >
+            {theme === "dark" ? (
+              <SunIcon className="h-4 w-4" />
             ) : (
-              <Bars3Icon className="w-7 h-7 dark:text-white cursor-pointer" />
+              <MoonIcon className="h-4 w-4" />
             )}
           </button>
         </div>
 
-        {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden bg-white dark:bg-[#1a1c1f] shadow-md rounded-lg p-4 mt-2">
-            <div className="space-y-4 text-lg dark:text-white">
-              {menuItems.map((item) => (
-                <div key={item.href} onClick={toggleMobileMenu}>
-                  <Link
-                    href={item.href}
-                    className="block py-2 hover:text-primary transition"
-                  >
-                    {item.label}
-                  </Link>
-                </div>
-              ))}
+        <button
+          type="button"
+          onClick={() => setIsMobileMenuOpen((isOpen) => !isOpen)}
+          aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isMobileMenuOpen}
+          className="rounded-full border border-gray-200 p-2 text-gray-700 transition hover:border-primary hover:text-primary dark:border-gray-700 dark:text-gray-200 md:hidden"
+        >
+          {isMobileMenuOpen ? (
+            <XMarkIcon className="h-5 w-5" />
+          ) : (
+            <Bars3Icon className="h-5 w-5" />
+          )}
+        </button>
+      </div>
 
-              {/* Resume */}
+      {isMobileMenuOpen && (
+        <div className="border-t border-gray-200/70 bg-[#f7f5f2] px-5 pb-5 pt-3 dark:border-gray-800 dark:bg-[#111214] md:hidden">
+          <div className="mx-auto flex max-w-7xl flex-col gap-1">
+            {menuItems.map((item) => (
               <Link
-                href="/aishwaryaCV.pdf"
-                download
-                className="px-4 py-2 rounded-lg shadow hover:opacity-90 transition text-gray-800 bg-gray-400 dark:bg-[#212428]/80 dark:text-gray-300 block"
-                onClick={toggleMobileMenu}
+                key={item.href}
+                href={item.href}
+                onClick={closeMobileMenu}
+                className="rounded-xl px-3 py-2.5 text-sm font-medium text-gray-700 transition hover:bg-primary/5 hover:text-primary dark:text-gray-200"
               >
-                Resume
+                {item.label}
               </Link>
-
-              {/* Theme Toggle */}
+            ))}
+            <div className="mt-2 flex items-center gap-3">
+              <Link
+                href="/resume%20(3).pdf"
+                download
+                onClick={closeMobileMenu}
+                className="flex-1 rounded-full bg-primary px-5 py-2.5 text-center text-sm font-semibold text-white"
+              >
+                Download resume
+              </Link>
               <button
+                type="button"
                 onClick={toggleTheme}
-                className="flex items-center gap-2 py-2 hover:text-primary transition cursor-pointer"
+                aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+                className="rounded-full border border-gray-200 p-2.5 text-gray-600 dark:border-gray-700 dark:text-gray-200"
               >
                 {theme === "dark" ? (
-                  <>
-                    <SunIcon className="w-5 h-5" /> Light Mode
-                  </>
+                  <SunIcon className="h-4 w-4" />
                 ) : (
-                  <>
-                    <MoonIcon className="w-5 h-5" /> Dark Mode
-                  </>
+                  <MoonIcon className="h-4 w-4" />
                 )}
               </button>
             </div>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </nav>
   );
 };

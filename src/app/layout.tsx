@@ -13,8 +13,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Aishwarya Gajmer",
-  description: "A responsive portfolio",
+  title: "Aishwarya Gajmer | UI/UX Designer & Frontend Developer",
+  description:
+    "Aishwarya Gajmer is a computer engineer passionate about UI/UX design and creating modern, responsive web and mobile experiences.",
 };
 
 export default function RootLayout({
@@ -25,11 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${poppins.variable} antialiased bg-[#edf6f9] transition-colors dark:bg-black dark:text-white`}
+        className={`${poppins.variable} antialiased transition-colors dark:text-white`}
       >
         <ThemeProvider>
           <Navbar />
-          <main className="min-h-screen pt-24">{children}</main>
+          <main className="min-h-screen pt-[4.5rem]">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>

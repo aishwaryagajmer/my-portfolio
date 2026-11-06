@@ -5,7 +5,9 @@ export interface Project {
     githubLink?: string;
     demoLink: string;
     demoLinkLabel?: string;
+    caseStudyLink?: string;
     image: string;
+    featured?: boolean;
 }
 
 export interface Blog {

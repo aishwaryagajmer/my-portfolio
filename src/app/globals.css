@@ -5,14 +5,14 @@
 }
 
 @theme {
-  --color-primary: #db324d;
-  --color-secondary: #6B7280;
-  --color-dark: #1F2937;
-  --color-light: #F9FAFB;
-  --color-text: #000000;
-  --color-bg: #ffffff;
+  --color-primary: #bd3e56;
+  --color-secondary: #6b7280;
+  --color-dark: #1f2937;
+  --color-light: #f9fafb;
+  --color-text: #171717;
+  --color-bg: #f7f5f2;
 
-  --font-sans: 'Inter', sans-serif;
+  --font-sans: var(--font-poppins), sans-serif;
 
   --animation-fade-in: fadeIn 0.5s ease-in-out;
   --animation-slide-up: slideUp 0.5s ease-in-out;
@@ -21,15 +21,25 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+html {
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background-color: #f7f5f2;
+  color: #171717;
+}
+
+html.dark body {
+  background-color: #111214;
+  color: #f9fafb;
+}
+
 a {
   transition: all 0.2s ease;
 }
 
 @layer components {
-  .container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
-  }
-  
   .btn {
     @apply px-4 py-2 rounded-md font-medium transition-colors duration-200;
   }
@@ -67,10 +77,11 @@ a {
   }
 }
 
- @keyframes blink {
-    0%, 50%, 100% { opacity: 1; }
-    25%, 75% { opacity: 0; }
-  }
-  .animate-blink {
-    animation: blink 2s step-start infinite;
-  }
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 2s step-start infinite;
+}

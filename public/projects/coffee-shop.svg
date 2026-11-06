@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
+  <defs>
+    <linearGradient id="background" x1="87" y1="31" x2="1097" y2="776" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF1C7"/>
+      <stop offset="1" stop-color="#E9B870"/>
+    </linearGradient>
+    <linearGradient id="cup" x1="593" y1="380" x2="796" y2="607" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDF8"/>
+      <stop offset="1" stop-color="#E7D7BD"/>
+    </linearGradient>
+    <filter id="shadow" x="508" y="350" width="421" height="334" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="18"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 0.298 0 0 0 0 0.169 0 0 0 0 0.071 0 0 0 0.2 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" rx="36" fill="url(#background)"/>
+  <circle cx="887" cy="170" r="220" fill="#F9D995" fill-opacity=".72"/>
+  <circle cx="1051" cy="704" r="155" fill="#D9A15B" fill-opacity=".3"/>
+  <path d="M0 632C184 578 330 625 477 685c147 60 383 84 723-25v140H0V632Z" fill="#F8E2B5"/>
+  <text x="105" y="170" fill="#684226" font-family="Georgia,serif" font-size="24" letter-spacing="7">A LITTLE MOMENT OF CALM</text>
+  <text x="101" y="280" fill="#422719" font-family="Georgia,serif" font-size="82" font-weight="700">Coffee,</text>
+  <text x="101" y="371" fill="#422719" font-family="Georgia,serif" font-size="82" font-weight="700">made with care.</text>
+  <path d="M105 425h104" stroke="#9D6336" stroke-width="4" stroke-linecap="round"/>
+  <text x="105" y="478" fill="#684226" font-family="Arial,sans-serif" font-size="25">Good coffee. Slow mornings.</text>
+  <g filter="url(#shadow)">
+    <ellipse cx="716" cy="598" rx="167" ry="36" fill="#A86839"/>
+    <path d="M570 427h292l-28 142c-8 39-41 67-81 67h-74c-39 0-73-28-81-67l-28-142Z" fill="url(#cup)"/>
+    <path d="M859 456h34c40 0 66 40 51 77l-17 42c-11 27-37 45-66 45h-23" stroke="#F7EAD5" stroke-width="25" stroke-linecap="round"/>
+    <ellipse cx="716" cy="427" rx="146" ry="35" fill="#6F432B"/>
+    <ellipse cx="716" cy="425" rx="126" ry="24" fill="#3D2419"/>
+    <path d="M698 407c-28-40 41-42 13-84m34 84c-27-40 42-42 13-84" stroke="#F4D6A0" stroke-width="8" stroke-linecap="round"/>
+    <path d="M630 486h171" stroke="#D8C3A4" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g fill="#85552F" opacity=".8">
+    <ellipse cx="1003" cy="410" rx="17" ry="27" transform="rotate(32 1003 410)"/>
+    <path d="M992 388c9 12 13 27 9 44" stroke="#E8C084" stroke-width="3"/>
+    <ellipse cx="1061" cy="472" rx="14" ry="23" transform="rotate(-27 1061 472)"/>
+    <path d="M1055 451c5 12 7 24 5 37" stroke="#E8C084" stroke-width="3"/>
+    <ellipse cx="959" cy="495" rx="13" ry="21" transform="rotate(18 959 495)"/>
+    <path d="M959 477c3 10 3 21 0 33" stroke="#E8C084" stroke-width="3"/>
+  </g>
+  <text x="105" y="707" fill="#79502E" font-family="Arial,sans-serif" font-size="20" letter-spacing="4">BREWED FOR YOUR EVERYDAY</text>
+</svg>
