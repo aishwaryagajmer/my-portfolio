@@ -53,7 +53,7 @@ const Navbar = () => {
             </Link>
           ))}
           <Link
-            href="/resume%20(3).pdf"
+            href="/Aishwarya%20resume.pdf"
             download
             className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-primary/90"
           >
@@ -103,7 +103,7 @@ const Navbar = () => {
             ))}
             <div className="mt-2 flex items-center gap-3">
               <Link
-                href="/resume%20(3).pdf"
+                href="/Aishwarya%20resume.pdf"
                 download
                 onClick={closeMobileMenu}
                 className="flex-1 rounded-full bg-primary px-5 py-2.5 text-center text-sm font-semibold text-white"

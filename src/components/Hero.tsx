@@ -2,10 +2,18 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaBehance, FaGithub, FaLinkedin } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
+import {
+  FaBehance,
+  FaDraftingCompass,
+  FaGithub,
+  FaLayerGroup,
+  FaPalette,
+  FaPlayCircle,
+  FaSearch,
+  FaLinkedin,
+} from "react-icons/fa";
 import { RiCss3Fill, RiHtml5Fill } from "react-icons/ri";
-import { SiFigma, SiFramer } from "react-icons/si";
+import { SiFigma } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const socialLinks = [
@@ -20,10 +28,13 @@ const socialLinks = [
 
 const skills = [
   { name: "Figma", icon: SiFigma },
-  { name: "Motion", icon: SiFramer },
+  { name: "Wireframing", icon: FaDraftingCompass },
+  { name: "Prototyping", icon: FaPlayCircle },
+  { name: "Auto Layout", icon: FaLayerGroup },
+  { name: "UI Design", icon: FaPalette },
+  { name: "UX Research", icon: FaSearch },
   { name: "HTML", icon: RiHtml5Fill },
   { name: "CSS", icon: RiCss3Fill },
-  { name: "JavaScript", icon: IoLogoJavascript },
 ];
 
 const Hero = () => {
@@ -50,15 +61,15 @@ const Hero = () => {
             <span className="text-primary">Aishwarya Gajmer</span>
           </h1>
           <p className="mt-4 text-2xl font-medium text-gray-700 dark:text-gray-200 sm:text-3xl">
-            UI/UX Designer <span className="text-primary">&</span> Frontend Developer
+            UI/UX Designer
           </p>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-gray-600 dark:text-gray-300 lg:mx-0">
-            I&apos;m a Computer Engineer with a strong passion for UI/UX design and
-            frontend development. I enjoy creating modern, responsive, and
-            user-friendly digital experiences using Figma, HTML, CSS, and
-            JavaScript. With a focus on creativity, usability, and visual
-            aesthetics, I aim to transform ideas into engaging, intuitive, and
-            functional web and mobile interfaces.
+            I&apos;m a passionate UI/UX Designer who enjoys creating modern,
+            intuitive, and visually engaging digital experiences. I focus on
+            designing user-friendly web and mobile interfaces that combine
+            creativity, functionality, and usability. With a keen eye for detail
+            and a love for thoughtful design, I aim to transform ideas into
+            meaningful and seamless digital experiences.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">
@@ -94,17 +105,17 @@ const Hero = () => {
             </span>
           </div>
 
-          <div className="mt-10">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-gray-500 dark:text-gray-400">
-              Tools I work with
+          <div className="mt-10 rounded-[2rem] border border-gray-700/70 bg-[#0d1117] p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] sm:p-7">
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-gray-300">
+              Tools &amp; Skills I work with
             </p>
-            <div className="flex flex-wrap justify-center gap-2 lg:justify-start">
+            <div className="flex flex-wrap justify-center gap-3 lg:justify-start">
               {skills.map(({ name, icon: Icon }) => (
                 <span
                   key={name}
-                  className="inline-flex items-center gap-2 rounded-full border border-gray-200/80 bg-white/70 px-3.5 py-2 text-sm font-medium text-gray-700 shadow-sm dark:border-gray-700 dark:bg-white/5 dark:text-gray-200"
+                  className="inline-flex items-center gap-2 rounded-full border border-gray-700 bg-[#151b22] px-4 py-2.5 text-sm font-medium text-gray-100 shadow-sm"
                 >
-                  <Icon className="text-base text-primary" />
+                  <Icon className="text-base text-[#ff4d7d]" />
                   {name}
                 </span>
               ))}
