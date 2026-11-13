@@ -24,8 +24,8 @@ const Projects = () => {
         Selected <span className="text-primary">work</span>
       </motion.h2>
       <p className="mx-auto mb-12 max-w-xl text-center leading-7 text-gray-600 dark:text-gray-400">
-        A selection of digital experiences shaped by thoughtful design and a
-        love for the details.
+        Concept projects exploring how thoughtful design can make everyday
+        tasks simpler.
       </p>
 
       <motion.div
@@ -73,16 +73,23 @@ const Projects = () => {
                   : "p-6"
               }`}
             >
-              {project.featured && (
-                <span className="w-fit rounded-full bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-primary">
-                  Featured project
-                </span>
-              )}
               <div>
-                <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                <div className="mb-2 flex flex-wrap items-center gap-3">
+                  <h3 className="text-2xl font-bold">{project.title}</h3>
+                  {project.tag && (
+                    <span className="w-fit rounded-full bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-primary">
+                      {project.tag}
+                    </span>
+                  )}
+                </div>
+                <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
                   {project.description}
                 </p>
+                {project.role && (
+                  <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
+                    My role: {project.role}
+                  </p>
+                )}
               </div>
 
               {project.technologies && project.technologies.length > 0 && (

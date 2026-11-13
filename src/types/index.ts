@@ -1,6 +1,8 @@
 export interface Project {
     title: string,
     description: string;
+    tag?: string;
+    role?: string;
     technologies?: string[];
     githubLink?: string;
     demoLink: string;

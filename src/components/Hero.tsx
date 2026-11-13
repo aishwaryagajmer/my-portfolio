@@ -35,6 +35,9 @@ const skills = [
   { name: "UX Research", icon: FaSearch },
   { name: "HTML", icon: RiHtml5Fill },
   { name: "CSS", icon: RiCss3Fill },
+  { name: "User Flows", icon: FaDraftingCompass },
+  { name: "Usability Testing", icon: FaSearch },
+  { name: "Design Systems", icon: FaLayerGroup },
 ];
 
 const Hero = () => {
@@ -64,12 +67,11 @@ const Hero = () => {
             UI/UX Designer
           </p>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-gray-600 dark:text-gray-300 lg:mx-0">
-            I&apos;m a passionate UI/UX Designer who enjoys creating modern,
-            intuitive, and visually engaging digital experiences. I focus on
-            designing user-friendly web and mobile interfaces that combine
-            creativity, functionality, and usability. With a keen eye for detail
-            and a love for thoughtful design, I aim to transform ideas into
-            meaningful and seamless digital experiences.
+            I design clear, usable mobile and web interfaces, from user flows
+            and wireframes to polished Figma prototypes. With a computer
+            engineering background, I design with real development constraints
+            in mind, so my work is as practical to build as it is pleasant to
+            use.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">
@@ -107,7 +109,7 @@ const Hero = () => {
 
           <div className="mt-10 rounded-[2rem] border border-gray-700/70 bg-[#0d1117] p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] sm:p-7">
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-gray-300">
-              Tools &amp; Skills I work with
+              Tools &amp; skills I work with
             </p>
             <div className="flex flex-wrap justify-center gap-3 lg:justify-start">
               {skills.map(({ name, icon: Icon }) => (
@@ -145,7 +147,7 @@ const Hero = () => {
                 Thoughtful design, made useful.
               </p>
               <p className="mt-1 text-xs text-gray-600 dark:text-gray-300">
-                Bringing ideas to life, one interface at a time.
+                Turning everyday problems into simple, intuitive interfaces.
               </p>
             </div>
           </div>

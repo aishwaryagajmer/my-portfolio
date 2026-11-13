@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="368" height="735" viewBox="0 0 368 735">
+  <defs>
+    <linearGradient id="heading-background" x1="0" y1="450" x2="0" y2="558" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B79800"/>
+      <stop offset="1" stop-color="#A68C00"/>
+    </linearGradient>
+  </defs>
+  <image href="/projects/food.png" width="368" height="735" preserveAspectRatio="none"/>
+  <rect x="25" y="450" width="318" height="108" fill="url(#heading-background)"/>
+  <text x="184" y="497" text-anchor="middle" fill="#382900" font-family="Arial, sans-serif" font-size="29" font-weight="700">Enjoy Your</text>
+  <text x="184" y="535" text-anchor="middle" fill="#382900" font-family="Arial, sans-serif" font-size="29" font-weight="700">Delicious Food</text>
+</svg>
