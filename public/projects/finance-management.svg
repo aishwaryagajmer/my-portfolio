@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
+  <defs>
+    <linearGradient id="background" x1="120" y1="30" x2="1050" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#19220B"/>
+      <stop offset=".48" stop-color="#080A08"/>
+      <stop offset="1" stop-color="#202020"/>
+    </linearGradient>
+    <linearGradient id="balance" x1="340" y1="164" x2="820" y2="414" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#202020"/>
+      <stop offset="1" stop-color="#303522"/>
+    </linearGradient>
+    <linearGradient id="lime" x1="356" y1="450" x2="548" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B9FF00"/>
+      <stop offset="1" stop-color="#8FE900"/>
+    </linearGradient>
+    <filter id="shadow" x="236" y="12" width="728" height="782" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" rx="36" fill="#141414"/>
+  <rect x="262" y="34" width="676" height="732" rx="76" fill="#91E900" opacity=".18" filter="url(#shadow)"/>
+  <rect x="280" y="24" width="640" height="752" rx="72" fill="url(#background)"/>
+  <circle cx="850" cy="106" r="118" fill="#A2F600" opacity=".08"/>
+
+  <text x="332" y="91" fill="#A7A7A7" font-family="Arial, sans-serif" font-size="21">Good Morning</text>
+  <text x="332" y="137" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="35" font-weight="600">Adam James</text>
+  <circle cx="840" cy="105" r="38" fill="#FFFFFF" fill-opacity=".09" stroke="#FFFFFF" stroke-opacity=".25"/>
+  <path d="M840 85c-9 0-13 7-13 16v9l-5 8h36l-5-8v-9c0-9-4-16-13-16Z" stroke="#F5F5F5" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M836 123c1 4 7 4 8 0" stroke="#F5F5F5" stroke-width="2.5" stroke-linecap="round"/>
+
+  <rect x="322" y="166" width="556" height="277" rx="42" fill="url(#balance)" stroke="#FFFFFF" stroke-opacity=".28"/>
+  <text x="360" y="216" fill="#A7A7A7" font-family="Arial, sans-serif" font-size="19">Account Number</text>
+  <text x="360" y="276" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="56" font-weight="500">$22,675.06</text>
+  <path d="M792 245c-9-11-20-11-29 0 9 11 20 11 29 0Z" stroke="#B6B6B6" stroke-width="3"/>
+  <circle cx="777.5" cy="245" r="4" stroke="#B6B6B6" stroke-width="3"/>
+  <rect x="360" y="303" width="180" height="34" rx="17" fill="#B5FF00" fill-opacity=".13"/>
+  <path d="M378 327v-15h14m-14 15 9-9 6 4 8-11" stroke="#B5FF00" stroke-width="2"/>
+  <text x="412" y="326" fill="#B5FF00" font-family="Arial, sans-serif" font-size="17">+$4567</text>
+  <text x="470" y="326" fill="#D0D0D0" font-family="Arial, sans-serif" font-size="16">(12.4%)</text>
+  <circle cx="584" cy="320" r="3" fill="#FFFFFF"/>
+  <text x="602" y="326" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="16">Yesterday</text>
+  <text x="360" y="372" fill="#A7A7A7" font-family="Arial, sans-serif" font-size="18">Card Number</text>
+  <text x="360" y="404" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24">****9856</text>
+  <text x="720" y="372" fill="#A7A7A7" font-family="Arial, sans-serif" font-size="18">Card Expiry</text>
+  <text x="763" y="404" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24">05/28</text>
+
+  <rect x="326" y="471" width="218" height="76" rx="38" fill="url(#lime)"/>
+  <path d="m391 520 26-26m-26 0h26v26" stroke="#111111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="432" y="519" fill="#111111" font-family="Arial, sans-serif" font-size="23" font-weight="600">Send</text>
+  <rect x="566" y="471" width="220" height="76" rx="38" fill="#FFFFFF"/>
+  <path d="m623 496 26 26m0-26v26h-26" stroke="#111111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="665" y="519" fill="#111111" font-family="Arial, sans-serif" font-size="23" font-weight="600">Receive</text>
+  <rect x="814" y="489" width="23" height="23" rx="5" stroke="#A8A8A8" stroke-width="4"/>
+  <rect x="848" y="489" width="23" height="23" rx="5" stroke="#A8A8A8" stroke-width="4"/>
+  <rect x="814" y="523" width="23" height="23" rx="5" stroke="#A8A8A8" stroke-width="4"/>
+  <rect x="848" y="523" width="23" height="23" rx="5" stroke="#A8A8A8" stroke-width="4"/>
+
+  <path d="M322 570h556M322 641h556" stroke="#FFFFFF" stroke-opacity=".24" stroke-width="2"/>
+  <text x="322" y="616" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="20" font-weight="600">Cards:</text>
+  <rect x="408" y="588" width="143" height="40" rx="20" fill="#242424" stroke="#5C5C5C"/>
+  <rect x="565" y="588" width="143" height="40" rx="20" fill="#242424" stroke="#5C5C5C"/>
+  <rect x="722" y="588" width="143" height="40" rx="20" fill="#242424" stroke="#5C5C5C"/>
+  <circle cx="435" cy="608" r="16" fill="#0875B9" stroke="#E9F5FF"/>
+  <circle cx="592" cy="608" r="16" fill="#0875B9" stroke="#E9F5FF"/>
+  <circle cx="749" cy="608" r="16" fill="#0875B9" stroke="#E9F5FF"/>
+  <text x="422" y="612" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="11" font-weight="700">VISA</text>
+  <text x="579" y="612" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="11" font-weight="700">VISA</text>
+  <text x="736" y="612" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="11" font-weight="700">VISA</text>
+  <text x="461" y="614" fill="#BDBDBD" font-family="Arial, sans-serif" font-size="16">**9654</text>
+  <text x="618" y="614" fill="#BDBDBD" font-family="Arial, sans-serif" font-size="16">**9654</text>
+  <text x="775" y="614" fill="#BDBDBD" font-family="Arial, sans-serif" font-size="16">**9654</text>
+
+  <rect x="280" y="673" width="640" height="103" rx="0" fill="#242424" fill-opacity=".9"/>
+  <text x="326" y="711" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="20" font-weight="600">Recent Activity</text>
+  <text x="786" y="711" fill="#B5FF00" font-family="Arial, sans-serif" font-size="18">View All</text>
+  <circle cx="364" cy="749" r="25" fill="#B5FF00" fill-opacity=".12"/>
+  <path d="m354 759 20-20m-20 0h20v20" stroke="#B5FF00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="408" y="746" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18">Adam Ross</text>
+  <text x="408" y="769" fill="#A7A7A7" font-family="Arial, sans-serif" font-size="15">04:34 PM</text>
+  <text x="792" y="746" fill="#B5FF00" font-family="Arial, sans-serif" font-size="18">+$445.56</text>
+  <text x="817" y="769" fill="#A7A7A7" font-family="Arial, sans-serif" font-size="15">Received</text>
+</svg>

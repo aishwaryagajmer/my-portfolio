@@ -12,6 +12,16 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    title: "Finance Management App",
+    description:
+      "A mobile finance dashboard concept for tracking account balances, cards, and recent activity, with quick send and receive actions.",
+    demoLink:
+      "https://embed.figma.com/proto/fHGBuTjnniwv8AXAfFZqOL/Untitled?node-id=4-34&p=f&viewport=260%2C291%2C0.06&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4%3A34&page-id=4%3A33&embed-host=share",
+    demoLinkLabel: "View Figma Prototype",
+    image: "/projects/finance-management.svg",
+    featured: true,
+  },
+  {
     title: "Coffee Shop Website",
     description:
       "A coffee shop website concept presented as an interactive Figma prototype.",
