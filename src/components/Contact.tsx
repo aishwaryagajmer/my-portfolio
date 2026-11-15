@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Contact = () => {
@@ -98,21 +98,6 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* PHONE */}
-          <div className="flex items-center gap-4 rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm dark:border-gray-700 dark:bg-gray-900/70">
-            <span className="rounded-xl bg-primary/10 p-3 text-primary">
-              <FaPhone className="h-5 w-5" />
-            </span>
-            <div>
-              <h3 className="font-semibold">Phone</h3>
-              <Link
-                href="tel:+9779803649303"
-                className="text-gray-600 transition hover:text-primary dark:text-gray-300"
-              >
-                9803649303
-              </Link>
-            </div>
-          </div>
         </motion.div>
 
         {/* RIGHT SIDE FORM */}
