@@ -13,7 +13,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Aishwarya Gajmer | UI/UX Designer & Frontend Developer",
+  title: "Aishwarya Gajmer | UI/UX Designer",
   description:
     "Aishwarya Gajmer is a computer engineer passionate about UI/UX design and creating modern, responsive web and mobile experiences.",
 };
