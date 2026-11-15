@@ -31,7 +31,21 @@ body {
 }
 
 html.dark body {
-  background-color: #111214;
+  background-color: #050711;
+  background-image:
+    radial-gradient(1px 1px at 7% 18%, rgb(255 255 255 / 75%) 50%, transparent),
+    radial-gradient(1px 1px at 19% 73%, rgb(255 255 255 / 65%) 50%, transparent),
+    radial-gradient(1.5px 1.5px at 32% 42%, rgb(220 231 255 / 75%) 50%, transparent),
+    radial-gradient(1px 1px at 43% 11%, rgb(255 255 255 / 70%) 50%, transparent),
+    radial-gradient(1px 1px at 56% 82%, rgb(255 255 255 / 65%) 50%, transparent),
+    radial-gradient(1.5px 1.5px at 68% 28%, rgb(220 231 255 / 75%) 50%, transparent),
+    radial-gradient(1px 1px at 79% 63%, rgb(255 255 255 / 70%) 50%, transparent),
+    radial-gradient(1px 1px at 92% 16%, rgb(255 255 255 / 65%) 50%, transparent),
+    radial-gradient(ellipse at 12% 18%, rgb(91 52 153 / 24%), transparent 42%),
+    radial-gradient(ellipse at 86% 48%, rgb(30 78 145 / 22%), transparent 40%),
+    radial-gradient(ellipse at 48% 92%, rgb(107 36 96 / 16%), transparent 38%),
+    linear-gradient(180deg, #080b19 0%, #0a0d1b 52%, #050711 100%);
+  background-attachment: fixed;
   color: #f9fafb;
 }
 

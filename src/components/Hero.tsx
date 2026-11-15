@@ -20,7 +20,7 @@ const socialLinks = [
   { label: "GitHub", href: "https://github.com/aishwaryagajmer", icon: FaGithub },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/basant-bhatt-3058a7292/",
+    href: "https://www.linkedin.com/in/aishwarya-gajmer-a177583b7/",
     icon: FaLinkedin,
   },
   { label: "Behance", href: "https://www.behance.net/aishwaryagajmer", icon: FaBehance },
